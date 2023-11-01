@@ -20,13 +20,15 @@
     "@fontsource/roboto": "^5.0.8",
     "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.14.16",
+    "@mui/system": "^5.14.16",
     "antd": "^5.10.3",
     "gatsby": "^5.12.4",
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-sharp": "^5.12.3",
     "gatsby-source-filesystem": "^5.12.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-material-ui-carousel": "^3.4.2"
   },
   "overrides": {
     "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {

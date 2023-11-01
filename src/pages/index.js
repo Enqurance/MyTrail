@@ -6,6 +6,8 @@ import Box from '@mui/material/Box';
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import {StaticImage} from "gatsby-plugin-image";
+import Carousel from 'react-material-ui-carousel';
+import {Card, CardMedia} from '@mui/material';
 import {
     avatarText,
     avatarPic,
@@ -14,14 +16,13 @@ import {
     myCaption,
 } from '../components/index.module.css'
 
+
 const IndexPage = () => {
     return (<Layout pageTitle="Home Page">
         <Stack direction="row">
             <Grid container>
                 <Grid item xs={6}>
-                    <Grid container>
-                        <MyAvatar></MyAvatar>
-                    </Grid>
+                    <MyAvatar></MyAvatar>
                     <Grid paddingTop={4} xs={10}>
                         <p>
                         <span className={selfIntro}>
@@ -48,7 +49,7 @@ const IndexPage = () => {
                             </Typography>
                             <span className={selfIntro}>
                                 I am now looking for a MSc program. In the future,
-                                I would like to try a PhD program, since I suppose myself a studious person&#x1F446;.
+                                perhaps I would like to try a PhD program, since I suppose myself a studious person&#x1F446;.
                             </span>
                         </p>
                         <p>
@@ -65,6 +66,13 @@ const IndexPage = () => {
                             <Typography className={myCaption}>
                                 This was taken at home in Jan. 2023
                             </Typography>
+                            <span className={selfIntro}>
+                                It is also truly fortunate for me to have crossed paths with my wonderful friends throughout
+                                various stages of my life, with whom I have shared countless meaningful moments&#x1F387;.
+                            </span>
+                        </p>
+                        <p>
+                            <MyImageList></MyImageList>
                         </p>
                     </Grid>
                 </Grid>
@@ -79,12 +87,12 @@ const IndexPage = () => {
 const MyAvatar = () => {
     return (
         <Grid container>
-            <Grid item className={avatarPic}><Avatar alt="Enqurance"
-                                                     src="https://raw.githubusercontent.com/Enqurance/Figures/main/202311011725041.png"
-                                                     sx={{width: 75, height: 75}}
+            <Grid item xs={2} className={avatarPic}><Avatar alt="Enqurance"
+                                                            src="https://raw.githubusercontent.com/Enqurance/Figures/main/202311011725041.png"
+                                                            sx={{width: 75, height: 75}}
             />
             </Grid>
-            <Grid item xs={10} paddingLeft={5} className={avatarText}>
+            <Grid item xs={10} paddingLeft={2} className={avatarText}>
                 <span style={{color: "#4286F3"}}>B</span>
                 <span style={{color: "#FBC805"}}>o</span>
                 <span style={{color: "#EB4335"}}>n</span>
@@ -101,6 +109,46 @@ const MyAvatar = () => {
     )
 }
 
-export const Head = () => <title>Home Page</title>
+const MyImageList = () => {
+    const items = [
+        {
+            img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311012342376.png",
+            title: "HKU",
+        },
+        {
+            img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311020000127.png",
+            title: "Dr. Chen",
+        },
+        {
+            img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311020002390.jpeg",
+            title: "Alxa Union",
+        },
+        {
+            img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311020004159.jpeg",
+            title: "Winter Olympics"
+        },
+        {
+            img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311020007463.png",
+            title: "Dr. Qu and Dr. Xiao"
+        },
+        {
+            img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311020010662.jpeg",
+            title: "Sia and James"
+        },
+        {
+            img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311020017110.png",
+            title: "With Erenrat"
+        }
+    ];
+    return (
+        <Carousel autoPlay={true} animation="slide" height={350}>
+            {items.map((item, index) => (
+                <Card key={index} style={{height: "90%", overflow: 'hidden', alignItems: 'center'}}>
+                    <CardMedia component="img" image={item.img} title={item.title}/>
+                </Card>
+            ))}
+        </Carousel>
+    );
+}
 
 export default IndexPage
