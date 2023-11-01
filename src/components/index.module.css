@@ -1,0 +1,26 @@
+.avatar-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.avatar-pic {
+    padding-top: 10px;
+}
+
+.self-intro {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: large;
+}
+
+.self-intro-bold {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: large;
+    font-weight: bold;
+}
+
+.my-caption {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: rgb(128, 128, 128);
+    font-style: italic;
+}

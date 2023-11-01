@@ -1,0 +1,51 @@
+.enqurance-word {
+    color: rgb(0, 51, 179);
+    font-family: American Typewriter, serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.trail-word {
+    color: black;
+    font-family: American Typewriter, serif;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.nav-to-top {
+    padding-top: 30px;
+}
+
+.nav-to-top-right {
+    padding-top: 30px;
+    text-align: right;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-link-item {
+    padding-right: 2rem;
+}
+
+.nav-link-text {
+    color: rgb(0, 51, 179);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.nav-homepage-text {
+    text-decoration: none;
+}
+
+.nav-bar-general {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

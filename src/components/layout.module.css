@@ -1,0 +1,13 @@
+.container {
+    margin: auto;
+    max-width: 100%;
+    font-family: sans-serif;
+}
+
+.heading {
+    color: honeydew;
+}
+
+.container-global {
+    background: snow;
+}
