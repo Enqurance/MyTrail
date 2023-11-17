@@ -5,22 +5,29 @@
 }
 
 .avatar-pic {
-    padding-top: 10px;
+    padding-right: 20px;
 }
 
 .self-intro {
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Geneva, serif;
     font-size: large;
 }
 
 .self-intro-bold {
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Geneva, serif;
     font-size: large;
     font-weight: bold;
 }
 
 .my-caption {
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Geneva, serif;
     color: rgb(128, 128, 128);
     font-style: italic;
+}
+
+.site-intro {
+    font-family: Geneva, serif;
+    font-weight: bolder;
+    font-size: 20px;
+    opacity: 0.8;
 }

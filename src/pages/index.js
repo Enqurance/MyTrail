@@ -1,29 +1,28 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-import Avatar from '@mui/material/Avatar'
 import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import {StaticImage} from "gatsby-plugin-image";
+import {StaticImage} from "gatsby-plugin-image"
 import Carousel from 'react-material-ui-carousel';
-import {Card, CardMedia} from '@mui/material';
+import {Card, CardContent, CardMedia} from '@mui/material';
+import MyTimeline from "../components/timeline";
 import {
     avatarText,
-    avatarPic,
     selfIntro,
     selfIntroBold,
     myCaption,
+    siteIntro,
 } from '../components/index.module.css'
 
 
 const IndexPage = () => {
-    return (<Layout pageTitle="Home Page">
+    return (<Layout pageTitle="HomePage">
         <Stack direction="row">
-            <Grid container>
+            <Grid container spacing={8}>
                 <Grid item xs={6}>
                     <MyAvatar></MyAvatar>
-                    <Grid paddingTop={4} xs={10}>
+                    <Grid xs={10}>
                         <p>
                         <span className={selfIntro}>
                             Hello, my name is Zijie Lin and Enqurnace is my
@@ -41,7 +40,7 @@ const IndexPage = () => {
                         </p>
                         <p>
                             <StaticImage
-                                src="https://raw.githubusercontent.com/Enqurance/Figures/main/202311012158665.jpg"
+                                src="../images/mt-changbai.jpeg"
                                 alt="Selfie">
                             </StaticImage>
                             <Typography className={myCaption}>
@@ -60,7 +59,7 @@ const IndexPage = () => {
                         </p>
                         <p>
                             <StaticImage
-                                src="https://raw.githubusercontent.com/Enqurance/Figures/main/202311012224707.png"
+                                src="../images/cats.png"
                                 alt="Cats">
                             </StaticImage>
                             <Typography className={myCaption}>
@@ -77,7 +76,10 @@ const IndexPage = () => {
                     </Grid>
                 </Grid>
                 <Grid item xs={6}>
-                    <Box sx={{background: 'white', height: '100vh'}}/>
+                    <Grid container>
+                        <Grid item xs={12} className={siteIntro}>This site marks my important trails</Grid>
+                        <Grid item xs={12}><MyTimeline></MyTimeline></Grid>
+                    </Grid>
                 </Grid>
             </Grid>
         </Stack>
@@ -87,12 +89,7 @@ const IndexPage = () => {
 const MyAvatar = () => {
     return (
         <Grid container>
-            <Grid item xs={2} className={avatarPic}><Avatar alt="Enqurance"
-                                                            src="https://raw.githubusercontent.com/Enqurance/Figures/main/202311011725041.png"
-                                                            sx={{width: 75, height: 75}}
-            />
-            </Grid>
-            <Grid item xs={10} paddingLeft={2} className={avatarText}>
+            <Grid item xs={12} className={avatarText}>
                 <span style={{color: "#4286F3"}}>B</span>
                 <span style={{color: "#FBC805"}}>o</span>
                 <span style={{color: "#EB4335"}}>n</span>
@@ -113,38 +110,43 @@ const MyImageList = () => {
     const items = [
         {
             img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311012342376.png",
-            title: "HKU",
+            title: "HKU, 2023.7-2023.9",
         },
         {
             img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311020000127.png",
-            title: "Dr. Chen",
+            title: "Dr. Chen(Now Ph.D at THU)",
         },
         {
             img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311020002390.jpeg",
-            title: "Alxa Union",
+            title: "Alxa Union, 2021-2024",
         },
         {
             img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311020004159.jpeg",
-            title: "Winter Olympics"
+            title: "2022 Beijing Winter Olympics, 2022.1-2022.3"
         },
         {
-            img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311020007463.png",
-            title: "Dr. Qu and Dr. Xiao"
+            img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311020806412.png",
+            title: "QZY(Now MA. at BUAA)"
         },
         {
             img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311020010662.jpeg",
-            title: "Sia and James"
+            title: "Sia(Now MA. at HUST) and James(Now Ph.D at SYSU)"
         },
         {
             img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311020017110.png",
-            title: "With Erenrat"
+            title: "Erenrat(Now MA. at ANU)"
         }
     ];
     return (
-        <Carousel autoPlay={true} animation="slide" height={350}>
+        <Carousel autoPlay={false} animation="slide" indicators={false} height={400}>
             {items.map((item, index) => (
-                <Card key={index} style={{height: "90%", overflow: 'hidden', alignItems: 'center'}}>
-                    <CardMedia component="img" image={item.img} title={item.title}/>
+                <Card key={index} out style={{alignItems: 'center'}} variant="outlined">
+                    <CardMedia component="img" image={item.img} title={item.title} style={{ height: '250px' }}/>
+                    <CardContent>
+                        <Typography className={myCaption}>
+                            {item.title}
+                        </Typography>
+                    </CardContent>
                 </Card>
             ))}
         </Carousel>

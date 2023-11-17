@@ -2,14 +2,17 @@ import * as React from 'react'
 import {Link} from 'gatsby'
 import {
     enquranceWord,
-    trailWord,
     navToTop,
     navToTopRight,
     navHomepageText,
 } from './navbar.module.css'
+import {
+    avatarPic
+} from './index.module.css'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import Avatar from "@mui/material/Avatar";
 
 const Navigator = () => {
     return (
@@ -17,9 +20,15 @@ const Navigator = () => {
             <Grid container spacing={6}>
                 <Grid item xs={6}>
                     <div className={navToTop}>
+                        <div className={avatarPic}>
+                            <Avatar alt="Enqurance"
+                                    src="https://raw.githubusercontent.com/Enqurance/Figures/main/202311011725041.png"
+                                    sx={{width: 50, height: 50}}
+                                    variant={"rounded"}
+                            />
+                        </div>
                         <Link to="/" className={navHomepageText}>
-                            <span className={enquranceWord}>Enqurance's </span>
-                            <span className={trailWord}>Trail</span>
+                            <span className={enquranceWord}>Enqurance </span>
                         </Link>
                     </div>
                 </Grid>

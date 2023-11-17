@@ -1,0 +1,20 @@
+.year-text {
+    font-size: xx-large;
+    font-family: Impact, serif;
+}
+
+.date-text {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    font-size: large;
+    font-family: Geneva, serif;
+    font-weight: bolder;
+    margin-left: 0.5rem;
+}
+
+.info-text {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    font-family: Geneva, serif;
+    font-weight: bolder;
+}

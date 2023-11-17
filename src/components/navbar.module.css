@@ -1,18 +1,11 @@
 .enqurance-word {
     color: rgb(0, 51, 179);
-    font-family: American Typewriter, serif;
     font-size: 30px;
     font-weight: 600;
 }
 
-.trail-word {
-    color: black;
-    font-family: American Typewriter, serif;
-    font-size: 35px;
-    font-weight: 600;
-}
-
 .nav-to-top {
+    display: flex;
     padding-top: 30px;
 }
 

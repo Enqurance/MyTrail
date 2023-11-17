@@ -9,5 +9,16 @@
 }
 
 .container-global {
-    background: snow;
+    background: white;
+}
+
+.icon-style {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.layout-copy {
+    font-family: Arial, serif;
+    font-weight: bold;
+    color: rgb(128, 128, 128);
 }
