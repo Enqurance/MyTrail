@@ -1,0 +1,11 @@
+.post-title {
+    font-family: Impact, serif;
+    font-size: 30px;
+    padding-left: 1rem;
+}
+
+.my-caption {
+    font-family: Geneva, serif;
+    color: rgb(128, 128, 128);
+    font-style: italic;
+}

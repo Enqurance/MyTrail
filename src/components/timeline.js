@@ -2,6 +2,7 @@ import * as React from 'react';
 import {styled} from '@mui/material/styles';
 import Divider from '@mui/material/Divider';
 import Typography from "@mui/material/Typography";
+import Link from '@mui/material/Link';
 import {CalendarMonth, Flight, Home, Quiz, Science, School, Medication, Pets, Festival} from "@mui/icons-material";
 import {
     yearText, dateText, infoText, moreText
@@ -58,18 +59,22 @@ export default function DividerText() {
                 </Stack>
                 <Stack direction="row" spacing={2} paddingLeft={1.5}>
                     <Divider orientation="vertical" flexItem/>
-                    <Stack direction="row" spacing={2}>
-                        <Flight fontSize={"large"} sx={{color: brown[600]}}></Flight>
-                        <Grid container>
-                            <Grid item xs={12}>
-                                <Typography className={infoText} style={{color: '#6D4C41'}}>11.3 - 11.12</Typography>
+                    <Link href={"posts/2023/japan"} underline={"none"}
+                          sx={{'&:hover': {opacity: 0.7}}}>
+                        <Stack direction="row" spacing={2}>
+                            <Flight fontSize={"large"} sx={{color: brown[600]}}></Flight>
+                            <Grid container>
+                                <Grid item xs={12}>
+                                    <Typography className={infoText} style={{color: '#6D4C41'}}>11.3 -
+                                        11.12</Typography>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Typography className={infoText} style={{color: '#6D4C41'}}>I visited Japan🇯🇵 With
+                                        Dr. Guo</Typography>
+                                </Grid>
                             </Grid>
-                            <Grid item xs={12}>
-                                <Typography className={infoText} style={{color: '#6D4C41'}}>I visited Japan🇯🇵 With Dr.
-                                    Guo</Typography>
-                            </Grid>
-                        </Grid>
-                    </Stack>
+                        </Stack>
+                    </Link>
                 </Stack>
                 <Stack direction="row" spacing={2} paddingBottom={1.5} paddingTop={1.5}>
                     <CalendarMonth sx={{color: green[800]}}></CalendarMonth>

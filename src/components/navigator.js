@@ -34,9 +34,9 @@ const Navigator = () => {
                 </Grid>
                 <Grid item xs={6}>
                     <Grid container justifyContent="flex-end" className={navToTopRight} fontSize={35}>
-                        <JumpButton name={"HomePage"} target={"/"}></JumpButton>
-                        <JumpButton name={"About"} target={"/about"}></JumpButton>
-                        <JumpButton name={"Resume"} target={"/resume"}></JumpButton>
+                        {/*<JumpButton name={"HomePage"} target={"/"}></JumpButton>*/}
+                        {/*<JumpButton name={"About"} target={"/about"}></JumpButton>*/}
+                        {/*<JumpButton name={"Resume"} target={"/resume"}></JumpButton>*/}
                     </Grid>
                 </Grid>
                 <Grid item xs={12}></Grid>
