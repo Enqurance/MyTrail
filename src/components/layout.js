@@ -10,13 +10,14 @@ import EmailIcon from '@mui/icons-material/Email';
 import FaceIcon from '@mui/icons-material/Face';
 import Grid from "@mui/material/Grid";
 import Link from '@mui/material/Link';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Typography from "@mui/material/Typography";
 
 const Layout = ({children}) => {
     return (<React.Fragment>
         <CssBaseline/>
         <Container maxWidth="100vh" className={containerGlobal}>
-            <Container maxWidth="lg">
+            <Container maxWidth="md">
                 <div className={container}>
                     <Navigator></Navigator>
                     <main>
@@ -38,6 +39,11 @@ const Layout = ({children}) => {
                                 </Link>
                         </span>
                         <span className={iconStyle}>
+                            <Link href={"https://www.linkedin.com/in/%E5%AD%90%E6%9D%B0-%E6%9E%97-604690296/?locale=en_US"}>
+                                <LinkedInIcon fontSize={"large"}></LinkedInIcon>
+                            </Link>
+                        </span>
+                        <span className={iconStyle}>
                             <Link href={"https://enqurance.github.io/"}>
                                 <FaceIcon fontSize={"large"}></FaceIcon>
                             </Link>
@@ -47,7 +53,7 @@ const Layout = ({children}) => {
                 <Grid container justifyContent={"center"}>
                     <Grid item paddingBottom={5} paddingTop={1}>
                         <Typography className={layoutCopy}>
-                            ©️{} Enqurance · 2023.11
+                            ©️{} Enqurance · 2023
                         </Typography>
                     </Grid>
                 </Grid>

@@ -19,10 +19,10 @@ import {
 const IndexPage = () => {
     return (<Layout pageTitle="HomePage">
         <Stack direction="row">
-            <Grid container spacing={8}>
-                <Grid item xs={6}>
+            <Grid container spacing={2}>
+                <Grid item xs={12} md={6}>
                     <MyAvatar></MyAvatar>
-                    <Grid xs={10}>
+                    <Grid item xs={12}>
                         <p>
                         <span className={selfIntro}>
                             Hello, my name is Zijie Lin and Enqurnace is my
@@ -70,12 +70,13 @@ const IndexPage = () => {
                                 various stages of my life, with whom I have shared countless meaningful moments&#x1F387;.
                             </span>
                         </p>
-                        <p>
+                        <div>
                             <MyImageList></MyImageList>
-                        </p>
+                        </div>
                     </Grid>
+                    <Grid item xs={2}></Grid>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={12} md={6}>
                     <Grid container>
                         <Grid item xs={12} className={siteIntro}>This site marks my important trails</Grid>
                         <Grid item xs={12}><MyTimeline></MyTimeline></Grid>
@@ -138,10 +139,10 @@ const MyImageList = () => {
         }
     ];
     return (
-        <Carousel autoPlay={false} animation="slide" indicators={false} height={400}>
+        <Carousel autoPlay={true} animation="slide" indicators={false} height={400}>
             {items.map((item, index) => (
                 <Card key={index} out style={{alignItems: 'center'}} variant="outlined">
-                    <CardMedia component="img" image={item.img} title={item.title} style={{ height: '250px' }}/>
+                    <CardMedia component="img" image={item.img} title={item.title} style={{height: '250px'}}/>
                     <CardContent>
                         <Typography className={myCaption}>
                             {item.title}
