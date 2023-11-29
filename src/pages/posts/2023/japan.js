@@ -294,12 +294,12 @@ const Nov_Fifth = [
         title: 'SensojiTemple',
     },
     {
-        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311291854940.jpeg",
-        title: "ShibuyaSky"
+        img: 'https://raw.githubusercontent.com/Enqurance/Figures/main/202311291854940.jpeg',
+        title: 'ShibuyaSky'
     },
     {
-        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311291902531.jpeg",
-        title: "Me"
+        img: 'https://raw.githubusercontent.com/Enqurance/Figures/main/202311291902531.jpeg',
+        title: 'Me'
     }
 ];
 
@@ -325,8 +325,8 @@ const Nov_Sixth = [
         title: 'Comics',
     },
     {
-        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202311291923951.jpeg",
-        title: "Pork",
+        img: 'https://raw.githubusercontent.com/Enqurance/Figures/main/202311291923951.jpeg',
+        title: 'Pork',
     }
 ];
 
