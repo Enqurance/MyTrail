@@ -22,7 +22,7 @@ const Japan = () => {
                 <Stack direction={"row"}>
                     <Flight sx={{fontSize: 40}} style={{color: red[700], opacity: 0.8}}></Flight>
                     <Typography className={postTitle} style={{color: red[700], opacity: 0.8}}>
-                        2023 · Japan 🇯🇵🌸
+                        Nov. 2023 · Japan 🇯🇵🌸
                     </Typography>
                 </Stack>
             </Grid>
