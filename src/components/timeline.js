@@ -44,7 +44,7 @@ export default function DividerText() {
                                     12.15</Typography>
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography className={infoText} style={{color: '#1664C0'}}>I will visit NTU in
+                                <Typography className={infoText} style={{color: '#1664C0'}}>I am visiting NTU in
                                     Singapore🇸🇬 for an Internship
                                 </Typography>
                             </Grid>
@@ -70,7 +70,7 @@ export default function DividerText() {
                                 </Grid>
                                 <Grid item xs={12}>
                                     <Typography className={infoText} style={{color: '#6D4C41'}}>I visited Japan🇯🇵 With
-                                        Dr. Guo</Typography>
+                                        Dr. Guo【Blog】</Typography>
                                 </Grid>
                             </Grid>
                         </Stack>
