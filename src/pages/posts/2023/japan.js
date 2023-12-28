@@ -440,9 +440,306 @@ const Japan = () => {
                 </Stack>
                 <Markdown>
                     游览完岚山后，我们去了二条城。由于行程太紧，而二条城恰好开放了夜间活动，因此我们就打算在晚上游览这里。
-                    不过说实话，由于光线实在是太暗，我们几乎看不清楚什么，所以整体上的感觉是——二条城倒也没什么可以看的。
+                    不过说实话，由于光线实在是太暗，我们几乎看不清楚什么，所以整体上的感觉是二条城倒也没什么可以看的。
                     我们早早回到了住处，便准备休息了。除了我们和韩国人，另外两户旅客都是香港人，我们和他们各自打了招呼。
                     不过我们准备睡觉的时候，白天遇到的两位韩国人也没有回来。
+                </Markdown>
+                <Markdown>
+                    第二天，我们去了伏见稻荷大社、清水寺和平安神宫。伏见稻荷大社应当是我在日本看见最美的神社了，
+                    大社位于稻荷山的山麓，由诸多小型寺庙组成。其中最值得一看的当属千本鸟居，也就是上千根鸟居形成的步道。
+                    每一根鸟居大小各不相同，一般都是由公司或者个人捐建的；而大社入口的鸟居，则是由丰臣秀吉于1589年捐建，
+                    可谓是有悠久的历史了。沿着步道行走，时不时会遇到小型的祭坛，上面供奉着白狐。我们投了几枚硬币，
+                    然后在大社中的荒木神社买了一只可爱的泥塑小狐狸。
+                </Markdown>
+                <Stack style={{alignItems: "center"}}>
+                    <ImageList sx={{width: "50%"}} cols={1}>
+                        {fushimi.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                    <Typography className={myCaption}>
+                        神社鸟居
+                    </Typography>
+                </Stack>
+                <Stack style={{alignItems: "center"}}>
+                    <ImageList sx={{width: "50%"}} cols={1}>
+                        {fox.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                    <Typography className={myCaption}>
+                        在荒木神社买的小狐狸
+                    </Typography>
+                </Stack>
+                <Markdown>
+                    游览完大社，大概到了中午，我们便出发前往清水寺。路上，我们在一家小店吃了一份日式便当，
+                    味道还是十分不错。前往清水寺需要经过二年坂或是三年坂，这个时间早就被游客围的水泄不通了。
+                    清水寺也算是京都的传统热门景点了，登高望远，景色非常不错。
+                </Markdown>
+                <Stack style={{alignItems: "center"}}>
+                    <ImageList sx={{width: "60%"}} cols={2}>
+                        {kiyomizu.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                    <Typography className={myCaption}>
+                        清水寺
+                    </Typography>
+                </Stack>
+                <Stack style={{alignItems: "center"}}>
+                    <ImageList sx={{width: "90%"}} cols={1}>
+                        {high.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                    <Typography className={myCaption}>
+                        登高望远
+                    </Typography>
+                </Stack>
+                <Markdown>
+                    随后，我们去了八坂神社和平安神宫。八坂神社很小，没有什么特别之处；
+                    平安神宫内部空间也比较开阔，入口处有一个很大很漂亮的鸟居。
+                    不得不说，日本鸟居的大橘红色非常醒目。
+                </Markdown>
+                <Stack style={{alignItems: "center"}}>
+                    <ImageList sx={{width: "50%"}} cols={1}>
+                        {peace_palace.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                    <Typography className={myCaption}>
+                        平安神宫的鸟居
+                    </Typography>
+                </Stack>
+                <Markdown>
+                    我们逛完这两处景点后，就先会住处休息了。彼时才刚刚下午四点，店长见到我们这么早回来也感到惊讶。
+                    其实，这是因为我们晚上约了一位霄哥认识的日本朋友。日本朋友姓藤井，
+                    我们就姑且称他为藤井君吧。藤井君是霄哥在瑞士访学时认识的，是京都大学的毕业生，
+                    这次他听说我们来日本，特地月我们在京都吃饭。大概晚上七点，我们到了四条，
+                    没过一会就和藤井君见面了。藤井君身材不高，留着中等长度的头发，留了一点胡子渣，
+                    不过整个人看上去非常精神。后来我才知道，他那时正在忙于创业。
+                </Markdown>
+                <Markdown>
+                    藤井君带我们在四条、五条周围转了转，并且带我们到鸭川边上散步。我们聊了不少事情，
+                    也讨论了一些文化、社会的问题。随后，藤井君带我们到一处吃寿喜烧的小店，小店的位置非常隐蔽，
+                    但走进去之后空间非常开阔。我们进去后，接待人员热情地迎接我们，然后帮我们开始被菜。
+                    寿喜烧是一种经典的日本火锅料理，食材包括品质极高的牛肉，以及大葱、豆腐、冬菇等蔬菜，
+                    用少量酱汁进行烹煮，并蘸生鸡蛋食用。不得不说，藤井君的品味非常不错，
+                    这家店的寿喜烧很好吃，并且服务也非常周到。当然，吃饭并不是最重要的，
+                    朋友之间的畅谈才是最重要的。 藤井君有非常多新颖的点子，我在和他交流时，
+                    也对日本的文化、社会生活以及日本年轻人的社会心理，有了进一步的了解。
+                    我们聊到了文化、技术、社会等话题，一直到晚上十一点才启程回住处。
+                </Markdown>
+                <Markdown>
+                    到了住处，我们稍微洗漱了一下，就准备睡觉了。当然，韩国的朋友依旧是精力充沛，直到半夜也没有回来。
+                </Markdown>
+                <Stack style={{alignItems: "center"}}>
+                    <ImageList sx={{width: "70%"}} cols={2}>
+                        {sukiyaki.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                    <Typography className={myCaption}>
+                        寿喜烧
+                    </Typography>
+                </Stack>
+                <Markdown>
+                    马上到了第三天，也就是我们在京都的最后一天了。这一天，我们计划游览奈良和宇治。
+                    奈良也叫平城，在公园八世纪曾是日本的首都，因此也是日本文化的代表城市之一。
+                    今年来，奈良以公园和小鹿吸引了诸多游客。我们早上乘坐近铁到达奈良，并前往奈良公园。
+                    没走几步路，就陆陆续续的有小鹿出现在马路上了。通常，人们会购买仙贝喂食小鹿，
+                    小鹿见到拿着仙贝的人，也会围上去作出“鞠躬”的姿势，向你讨要仙贝。
+                    只是一定要小心低调，不要吸引太多鹿，否则会难以脱身；如果被身型较大的雄鹿盯上了，
+                    还是建议束手就擒，交出所有的仙贝，否则就要被追着顶了（霄哥亲身经历）。
+                </Markdown>
+                <Stack style={{alignItems: "center"}}>
+                    <ImageList sx={{width: "80%"}} cols={3}>
+                        {deer.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                    <Typography className={myCaption}>
+                        奈良的小鹿
+                    </Typography>
+                </Stack>
+                <Markdown>
+                    在奈良用过午餐后，我们就出发前往宇治。宇治在奈良和京都连线中间的位置，是日本抹茶的发源地。
+                    我们到的时候，大概是下午三点，然后我们径直前往一个著名的抹茶店——伊藤久右卫门。
+                    我们先在店里用了甜品，然后购买了一些抹茶伴手礼。购物完后，我们就前往参观当地的著名寺庙平等院。
+                    寺庙并不算大，但当天阴天下雨，伴着傍晚浅蓝调的光线，倒也别有一番风味。
+                </Markdown>
+                <Stack style={{alignItems: "center"}}>
+                    <ImageList sx={{width: "60%"}} cols={2}>
+                        {uji.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                    <Typography className={myCaption}>
+                        宇治市
+                    </Typography>
+                </Stack>
+                <Markdown>
+                    我们大概七点回到了京都，晚餐吃了回转寿司。到住处后，我和霄哥说，“要不我们去泡汤吧”。
+                    于是我们就参考店长的攻略，找到了住处附近的一间汤屋。汤屋人并不算多，但不仅有本地人，
+                    也有外国的游客。价格也算不上贵，一名成年人是不到一千日元。日本的汤屋就像是泡温泉的澡堂，
+                    有分浴也有混浴，但大家都不能穿任何衣物在身上，也不能在淋浴的时候盯着别人看，
+                    更不能带手机等电子设备进入淋浴区。人们在泡汤之前，需要先洗净身体，在泡完汤后再次洗浴。
+                    说实在的，泡汤真的能让身体得到极大的放松，尤其是在经历一天又湿又冷的旅途之后。
+                    不过日本的汤池温度较高，我和霄哥都不是很习惯，因此泡了大概四十分钟就结束了。
+                    泡完汤，在大堂喝一杯冷饮，实在是逍遥自在。
+                </Markdown>
+                <Stack style={{alignItems: "center"}}>
+                    <ImageList sx={{width: "40%"}} cols={1}>
+                        {spring.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                    <Typography className={myCaption}>
+                        泡完汤，来一杯汽水
+                    </Typography>
+                </Stack>
+                <Markdown>
+                    回到宿舍，我和霄哥在公共区域办公休息，没过多久就休息了，因为第二天一大早，我们还要前往大阪。
+                    我们的京都之行在今晚就结束了， 但其实我仍旧觉得意犹未尽。这次在京都的三天，
+                    不仅见到了很多景，也遇到了很多友好的人。旅行有的时候不仅仅是观察和购物，
+                    更应该是感同身受的体会。我想在京都这三天，应当是我此生目前经历过最棒的旅行了。
+                </Markdown>
+                <Markdown remarkPlugins={[remarkGfm]}>
+                    ### 大阪🏯 · 11.11 - Osaka
+                </Markdown>
+                <Markdown>
+                    在日本最后的一站——大阪，这是一座非常独特的城市，在日本无出其右。刚从车站出来，
+                    我们就能嗅到这座城市的个性：活力、随意、躁动、粗旷。随处可见的垃圾、闯红灯的人群、
+                    凌乱的建筑、不让行人的车辆，和我们去过的其他的日本城市完全不同。这里的人民似乎不在意那么多约束，
+                    更喜欢顺着自己的意愿来过活。只可惜我们只在大阪待上一天，不然肯定能有更加新奇的体验。
+                </Markdown>
+                <Markdown>
+                    在大阪的一天，我们分别去了通天阁、二条城、海游馆和心斋桥，将大阪的主要景点体验了一遍。
+                    很可惜，没有时间去大阪的环球影城，听说有咒术回战的专项项目。
+                </Markdown>
+                <Stack style={{alignItems: "center"}}>
+                    <ImageList sx={{width: "60%"}} cols={2}>
+                        {osaka.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                    <Typography className={myCaption}>
+                        大阪一日
+                    </Typography>
+                </Stack>
+                <Markdown>
+                    在日本的最后一天也比较匆忙，我和霄哥也感觉到身体上的疲惫。当度过精彩丰富的九天后，
+                    我们也意识到：该回家了。
+                </Markdown>
+                <Markdown remarkPlugins={[remarkGfm]}>
+                    ### 回程🇨🇳 · 11.12 - China
+                </Markdown>
+                <Markdown>
+                    11月12日早晨，我们从酒店出发，前往大阪关西国际机场。在地铁站，我拍下了我此程在日本拍的最后一张照片。
+                </Markdown>
+                <Stack style={{alignItems: "center"}}>
+                    <ImageList sx={{width: "60%"}} cols={1}>
+                        {last_pic.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                    <Typography className={myCaption}>
+                        最后的照片
+                    </Typography>
+                </Stack>
+                <Markdown>
+                    这一趟关西空港方向的电车是能过在中途分开的，也算颇具象征意义——我们要离开日本了。在日本的这十天，
+                    我们有了不少的收获，不仅有照片、纪念品，也有经验、体会。在回程的飞机上，我一直在思考这么一段话：
+                </Markdown>
+                <Markdown>
+                    “人生也是一场旅途，从一个地点到另一个地点，遇到形形色色的人。有时候，不要去思考自己会到达哪里，
+                    也不要过于纠结旅途的意义，真正重要的，是你作为人的体验。”
+                </Markdown>
+                <Markdown>
+                    现在，我已经结束了上一场旅程；而新的旅程也将马上开始。
+                </Markdown>
+                <Markdown>
+                    最后，特此鸣谢：霄哥，资助我此程的父母，以及我在旅途中遇到的任何人。
+                </Markdown>
+                <Markdown>
+                    贰零贰叁年十贰月十八日，葵卯年十一月十六，于新加坡。
                 </Markdown>
             </Grid>
         </Grid>
@@ -679,4 +976,120 @@ const mt_lan = [
     },
 ]
 
+const fushimi = [
+    {
+        img: 'https://raw.githubusercontent.com/Enqurance/Figures/main/202312281003871.png',
+        title: 'Torii'
+    },
+]
+
+const fox = [
+    {
+        img: 'https://raw.githubusercontent.com/Enqurance/Figures/main/202312281008097.jpg',
+        title: 'little_fox'
+    },
+]
+
+const kiyomizu = [
+    {
+        img: 'https://raw.githubusercontent.com/Enqurance/Figures/main/202312281017671.jpg',
+        title: 'kiyomizu'
+    },
+    {
+        img: 'https://raw.githubusercontent.com/Enqurance/Figures/main/202312281017861.jpg',
+        title: 'temple'
+    }
+]
+
+const high = [
+    {
+        img: 'https://raw.githubusercontent.com/Enqurance/Figures/main/202312281021307.jpg',
+        title: 'highview'
+    },
+]
+
+const peace_palace = [
+    {
+        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202312281026977.jpeg",
+        title: "big_torri"
+    },
+]
+
+const sukiyaki = [
+    {
+        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202312281046210.jpg",
+        title: "appetizer"
+    },
+    {
+        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202312281045676.jpeg",
+        title: "main dish"
+    }
+]
+
+const deer = [
+    {
+        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202312281100712.jpeg",
+        title: "many deer"
+    },
+    {
+        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202312281100693.jpeg",
+        title: "a deer"
+    },
+    {
+        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202312281108246.jpg",
+        title: "crackers"
+    }
+]
+
+const uji = [
+    {
+        img: 'https://raw.githubusercontent.com/Enqurance/Figures/main/202312281122834.jpeg',
+        title: 'dessert'
+    },
+    {
+        img: 'https://raw.githubusercontent.com/Enqurance/Figures/main/202312281123317.jpg',
+        title: 'starbucks'
+    },
+    {
+        img: 'https://raw.githubusercontent.com/Enqurance/Figures/main/202312281123904.jpg',
+        title: 'uji kawa'
+    },
+    {
+        img: 'https://raw.githubusercontent.com/Enqurance/Figures/main/202312281123046.jpg',
+        title: 'Byōdō-in'
+    }
+]
+
+const spring = [
+    {
+        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202312281135294.jpeg",
+        title: "drink"
+    }
+]
+
+const osaka = [
+    {
+        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202312281154810.jpeg",
+        title: "Tsutenkaku"
+    },
+    {
+        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202312281156230.jpg",
+        title: "Aquraium"
+    },
+    {
+        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202312281155672.jpeg",
+        title: "Tenshu"
+    },
+    {
+        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202312281156678.jpg",
+        title: "Shinsaibashi"
+    },
+]
+
+const last_pic = [
+    {
+        img: "https://raw.githubusercontent.com/Enqurance/Figures/main/202312281212162.jpeg",
+        title: "last_pic"
+    }
+]
 export default Japan;
