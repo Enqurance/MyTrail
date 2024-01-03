@@ -27,10 +27,10 @@ const Japan = () => {
                 </Stack>
             </Grid>
             <Grid item xs={12}>
-                <Markdown remarkPlugins={[remarkGfm]}>
+                <Markdown>
                     ## 和霄哥的日本之行
                 </Markdown>
-                <Markdown remarkPlugins={[remarkGfm]}>
+                <Markdown>
                     ### 东京🗼 · 11.3-11.6 - Tokyo
                 </Markdown>
                 <Markdown>

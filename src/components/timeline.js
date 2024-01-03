@@ -84,18 +84,22 @@ export default function DividerText() {
                 </Stack>
                 <Stack direction="row" spacing={2} paddingLeft={1.5}>
                     <Divider orientation="vertical" flexItem/>
-                    <Stack direction="row" spacing={2}>
-                        <Flight fontSize={"large"} sx={{color: green[800]}}></Flight>
-                        <Grid container>
-                            <Grid item xs={12}>
-                                <Typography className={infoText} style={{color: '#2F7D32'}}>10.20 - 10.22</Typography>
+                    <Link href={"posts/2023/yantai"} underline={"none"}
+                          sx={{'&:hover': {opacity: 0.7}}}>
+                        <Stack direction="row" spacing={2}>
+                            <Flight fontSize={"large"} sx={{color: green[800]}}></Flight>
+                            <Grid container>
+                                <Grid item xs={12}>
+                                    <Typography className={infoText} style={{color: '#2F7D32'}}>10.20 -
+                                        10.22</Typography>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Typography className={infoText} style={{color: '#2F7D32'}}>I visited Yantai City🍎,
+                                        Shandong【Blog】</Typography>
+                                </Grid>
                             </Grid>
-                            <Grid item xs={12}>
-                                <Typography className={infoText} style={{color: '#2F7D32'}}>I visited Yantai City🍎,
-                                    Shandong</Typography>
-                            </Grid>
-                        </Grid>
-                    </Stack>
+                        </Stack>
+                    </Link>
                 </Stack>
                 <Stack direction="row" spacing={2} paddingLeft={1.5}>
                     <Divider orientation="vertical" flexItem/>
