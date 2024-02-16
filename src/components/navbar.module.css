@@ -34,6 +34,12 @@
     text-decoration: none;
 }
 
+.resume-word {
+    color: rgb(0, 51, 179);
+    font-size: 20px;
+    font-weight: 800;
+}
+
 .nav-bar-general {
     list-style: none;
     margin: 0;

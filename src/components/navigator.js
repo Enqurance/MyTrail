@@ -5,6 +5,7 @@ import {
     navToTop,
     navToTopRight,
     navHomepageText,
+    resumeWord,
 } from './navbar.module.css'
 import {
     avatarPic
@@ -28,7 +29,7 @@ const Navigator = () => {
                             />
                         </div>
                         <Link to="/" className={navHomepageText}>
-                            <span className={enquranceWord}>Enqurance </span>
+                            <span className={enquranceWord}>Enqurance</span>
                         </Link>
                     </div>
                 </Grid>
@@ -36,32 +37,14 @@ const Navigator = () => {
                     <Grid container justifyContent="flex-end" className={navToTopRight} fontSize={35}>
                         {/*<JumpButton name={"HomePage"} target={"/"}></JumpButton>*/}
                         {/*<JumpButton name={"About"} target={"/about"}></JumpButton>*/}
-                        {/*<JumpButton name={"Resume"} target={"/resume"}></JumpButton>*/}
+                        <Link to="/resume" className={navHomepageText}>
+                            <span className={resumeWord}>Resume</span>
+                        </Link>
                     </Grid>
                 </Grid>
                 <Grid item xs={12}></Grid>
             </Grid>
         </Box>
-    )
-}
-
-const JumpButton = (props) => {
-    return (
-        <div>
-            <Button
-                href={props.target}
-                style={{
-                    fontSize: 'large',
-                    color: 'rgb(0, 51, 179)',
-                    fontWeight: '800',
-                    textAlign: 'center',
-                    borderRadius: '15%',
-                    padding: '0px 10px'
-                }}
-            >
-                {props.name}
-            </Button>
-        </div>
     )
 }
 export default Navigator

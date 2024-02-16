@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.my-name {
+    font-size: xx-large;
+    font-weight: 400;
+    font-family: Josefin Sans, serif;
+}
+
+.sub-title {
+    font-size: xx-large;
+    font-weight: 400;
+    font-family: Josefin Sans, serif;
+}
+
+.school-title {
+    font-size: large;
+    font-weight: 700;
+    font-family: Josefin Sans, serif;
+}
+
+.text-content {
+    font-size: large;
+    font-weight: 400;
+    font-family: Josefin Sans, serif;
+}
