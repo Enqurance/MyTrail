@@ -87,6 +87,27 @@ const ResumePage = () => {
                     <Stack className={textContent}>2023.11 - 2024.2, Singapore</Stack>
                 </Item>
             </Stack>
+            <Stack direction="row">
+                <Item>
+                    <ImageList cols={1}>
+                        {BUAA.map((item) => (
+                            <ImageListItem key={item.img} style={{width: 80, height: 80}}>
+                                <img
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                </Item>
+                <Item style={{paddingLeft: '20px', paddingTop: '20px'}}>
+                    <Stack className={schoolTitle}>Beihang University(Former BUAA)</Stack>
+                    <Stack className={textContent}>Academic Assistant, Computer Organisation, Compile Technology</Stack>
+                    <Stack className={textContent}>2022.9 -2023.1, 2023.9 - 2024.1, Beijing, China </Stack>
+                </Item>
+            </Stack>
             <Grid container style={{paddingTop: '20px'}}>
                 <Grid item xs={12} className={subTitle}>Skill</Grid>
                 <Grid item xs={12} className={subSubTitle}>
