@@ -28,12 +28,14 @@ const Navigator = () => {
         setIsOpen(open);
     };
 
-    const [isMobile, setIsMobile] = React.useState(window.innerWidth < 768);
+    const [isMobile, setIsMobile] = React.useState(true);
 
     React.useEffect(() => {
         const checkIfMobile = () => {
             setIsMobile(window.innerWidth < 768);
         };
+
+        checkIfMobile();
 
         window.addEventListener('resize', checkIfMobile);
         return () => {
@@ -77,7 +79,7 @@ const Navigator = () => {
                                 variant={"rounded"}
                         />
                     </Item>
-                    <Item style={{ display: 'flex', alignItems: 'center' }}>
+                    <Item style={{display: 'flex', alignItems: 'center'}}>
                         <Link to="/" className={navHomepageText}>
                             <span className={enquranceWord}>Enqurance</span>
                         </Link>
@@ -98,7 +100,7 @@ const Navigator = () => {
                             </Drawer>
                         </Item>
                     ) : (
-                        <Item style={{ display: 'flex', alignItems: 'center' }}>
+                        <Item style={{display: 'flex', alignItems: 'center'}}>
                             <Link to="/" className={navHomepageText} style={{paddingRight: "30px"}}>
                                 <span className={enquranceWord}>Homepage</span>
                             </Link>
