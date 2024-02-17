@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 .enqurance-word {
     color: rgb(0, 51, 179);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
+    font-family: Josefin Sans, serif;
 }
 
 .nav-to-top {
@@ -36,7 +39,8 @@
 
 .resume-word {
     color: rgb(0, 51, 179);
-    font-size: 20px;
+    padding-bottom: 5px;
+    font-size: 30px;
     font-weight: 800;
 }
 
@@ -47,4 +51,13 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.nav-sider-word {
+    color: rgb(0, 51, 179);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Josefin Sans, serif;
+    padding-left: 20px;
+    padding-top: 20px;
 }

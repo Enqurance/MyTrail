@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 .post-title {
-    font-family: Impact, serif;
+    font-family: Josefin Sans, serif;
     font-size: 30px;
     padding-left: 1rem;
 }
 
 .my-caption {
-    font-family: Geneva, serif;
+    font-family: Josefin Sans, serif;
     color: rgb(128, 128, 128);
     font-style: italic;
 }

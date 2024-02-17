@@ -40,11 +40,10 @@ export default function DividerText() {
                         <Science fontSize={"large"} sx={{color: blue[800]}}></Science>
                         <Grid container>
                             <Grid item xs={12}>
-                                <Typography className={infoText} style={{color: '#1664C0'}}>Starting from
-                                    12.15</Typography>
+                                <Typography className={infoText} style={{color: '#1664C0'}}>2023.12.15 - 2024.2.8</Typography>
                             </Grid>
                             <Grid item xs={12}>
-                                <Typography className={infoText} style={{color: '#1664C0'}}>I am visiting NTU in
+                                <Typography className={infoText} style={{color: '#1664C0'}}>I visited NTU in
                                     Singapore🇸🇬 for an Internship
                                 </Typography>
                             </Grid>

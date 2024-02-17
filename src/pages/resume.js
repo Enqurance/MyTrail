@@ -17,7 +17,7 @@ const ResumePage = () => {
     return (
         <Layout pageTitle="Resume">
             <Grid container rowSpacing={3}>
-                <Grid item xs={24} className={myName}>Lin Zijie</Grid>
+                <Grid item xs={24} className={myName}>Zijie Lin</Grid>
                 <Grid item xs={24} className={subTitle}>Education</Grid>
             </Grid>
             <Stack direction="row">

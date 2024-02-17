@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 .year-text {
     font-size: xx-large;
-    font-family: Impact, serif;
+    font-family: Josefin Sans, serif;
 }
 
 .date-text {
     display: flex;
     align-items: center; /* 垂直居中 */
     font-size: large;
-    font-family: Geneva, serif;
+    font-family: Josefin Sans, serif;
     font-weight: bolder;
     margin-left: 0.5rem;
 }
@@ -15,11 +17,11 @@
 .info-text {
     display: flex;
     align-items: center; /* 垂直居中 */
-    font-family: Geneva, serif;
+    font-family: Josefin Sans, serif;
     font-weight: bolder;
 }
 
 .more-text {
     font-size: x-large;
-    font-family: Impact, serif;
+    font-family: Josefin Sans, serif;
 }

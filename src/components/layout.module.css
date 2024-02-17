@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 .container {
     margin: auto;
     max-width: 100%;
-    font-family: sans-serif;
+    font-family: Josefin Sans, serif;
 }
 
 .heading {
@@ -18,7 +20,7 @@
 }
 
 .layout-copy {
-    font-family: Arial, serif;
+    font-family: Josefin Sans, serif;
     font-weight: bold;
     color: rgb(128, 128, 128);
 }

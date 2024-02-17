@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 .avatar-text {
-    font-family: 'Roboto', sans-serif;
+    font-family: Josefin Sans, serif;
     font-weight: bolder;
     font-size: 35px;
 }
@@ -9,24 +11,24 @@
 }
 
 .self-intro {
-    font-family: Geneva, serif;
+    font-family: Josefin Sans, serif;
     font-size: large;
 }
 
 .self-intro-bold {
-    font-family: Geneva, serif;
+    font-family: Josefin Sans, serif;
     font-size: large;
     font-weight: bold;
 }
 
 .my-caption {
-    font-family: Geneva, serif;
+    font-family: Josefin Sans, serif;
     color: rgb(128, 128, 128);
     font-style: italic;
 }
 
 .site-intro {
-    font-family: Geneva, serif;
+    font-family: Josefin Sans, serif;
     font-weight: bolder;
     font-size: 20px;
     opacity: 0.8;
