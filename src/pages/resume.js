@@ -4,6 +4,7 @@ import Grid from "@mui/material/Grid";
 import {
     myName,
     subTitle,
+    subSubTitle,
     schoolTitle,
     textContent,
 } from '../components/resume.module.css'
@@ -60,7 +61,7 @@ const ResumePage = () => {
                     </ImageList>
                 </Item>
                 <Item style={{paddingLeft: '25px', paddingTop: '20px'}}>
-                    <Stack className={schoolTitle}>University of Hongkong</Stack>
+                    <Stack className={schoolTitle}>University of Hong Kong</Stack>
                     <Stack className={textContent}>Intern, Department of Computer Science</Stack>
                     <Stack className={textContent}>2023.7 - 2023.9, Hongkong, China</Stack>
                 </Item>
@@ -87,7 +88,25 @@ const ResumePage = () => {
                 </Item>
             </Stack>
             <Grid container style={{paddingTop: '20px'}}>
-                <Grid item xs={24} className={subTitle}>Skills</Grid>
+                <Grid item xs={12} className={subTitle}>Skill</Grid>
+                <Grid item xs={12} className={subSubTitle}>
+                    Programming & Texting Languages:
+                </Grid>
+                <Grid item xs={12}>
+                    C, C++, Java, Python, Golang, Verilog, JavaScript, HTML, LaTex, Markdown
+                </Grid>
+                <Grid item xs={12} className={subSubTitle}>
+                    Frameworks & Tools:
+                </Grid>
+                <Grid item xs={12}>
+                    React, Vue, Django, Vivado, TensorFlow, Docker
+                </Grid>
+                <Grid item xs={12} className={subSubTitle}>
+                    Languages:
+                </Grid>
+                <Grid item xs={12}>
+                    Chinese (Native), English (IELTS Band 7)
+                </Grid>
             </Grid>
         </Layout>
     )
