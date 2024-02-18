@@ -48,27 +48,6 @@ const ResumePage = () => {
             <Stack direction="row">
                 <Item>
                     <ImageList cols={1}>
-                        {HKU.map((item) => (
-                            <ImageListItem key={item.img} style={{width: 75, height: 85}}>
-                                <img
-                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                    alt={item.title}
-                                    loading="lazy"
-                                />
-                            </ImageListItem>
-                        ))}
-                    </ImageList>
-                </Item>
-                <Item style={{paddingLeft: '25px', paddingTop: '20px'}}>
-                    <Stack className={schoolTitle}>University of Hong Kong</Stack>
-                    <Stack className={textContent}>Intern, Department of Computer Science</Stack>
-                    <Stack className={textContent}>2023.7 - 2023.9, Hongkong, China</Stack>
-                </Item>
-            </Stack>
-            <Stack direction="row">
-                <Item>
-                    <ImageList cols={1}>
                         {NTU.map((item) => (
                             <ImageListItem key={item.img} style={{width: 75, height: 85}}>
                                 <img
@@ -85,6 +64,27 @@ const ResumePage = () => {
                     <Stack className={schoolTitle}>Nanyang Technological University</Stack>
                     <Stack className={textContent}>Intern, School of Computer Science and Engineering</Stack>
                     <Stack className={textContent}>2023.11 - 2024.2, Singapore</Stack>
+                </Item>
+            </Stack>
+            <Stack direction="row">
+                <Item>
+                    <ImageList cols={1}>
+                        {HKU.map((item) => (
+                            <ImageListItem key={item.img} style={{width: 75, height: 85}}>
+                                <img
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                </Item>
+                <Item style={{paddingLeft: '25px', paddingTop: '20px'}}>
+                    <Stack className={schoolTitle}>University of Hong Kong</Stack>
+                    <Stack className={textContent}>Intern, Department of Computer Science</Stack>
+                    <Stack className={textContent}>2023.7 - 2023.9, Hong Kong, China</Stack>
                 </Item>
             </Stack>
             <Stack direction="row">
