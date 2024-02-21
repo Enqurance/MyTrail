@@ -10,17 +10,65 @@ import {
 import Grid from "@mui/material/Grid";
 import Stack from '@mui/material/Stack';
 import {blue, green, orange, yellow, purple, cyan, brown, red} from '@mui/material/colors';
-
-const Root = styled('div')(({theme}) => ({
-    width: '100%', ...theme.typography.body2, '& > :not(style) ~ :not(style)': {
-        marginTop: theme.spacing(2),
-    },
-}));
+import Box from "@mui/material/Box";
 
 export default function DividerText() {
-    return (<Root>
+    return (<Box>
         <Grid container>
             <Grid item xs={12}>
+                <Divider textAlign="left">
+                    <Typography className={yearText} style={{color: '#0133B3'}}>
+                        2024
+                    </Typography>
+                </Divider>
+            </Grid>
+            <Grid item xs={12} paddingLeft={2}>
+                <Stack direction="row" spacing={2} paddingBottom={1.5}>
+                    <CalendarMonth sx={{color: green[400]}}></CalendarMonth>
+                    <Typography className={dateText} style={{color: '#66BB6A'}}>
+                        February
+                    </Typography>
+                </Stack>
+                <Stack direction="row" spacing={2} paddingLeft={1.5}>
+                    <Divider orientation="vertical" flexItem/>
+                    <Stack direction="row" spacing={2}>
+                        <Flight fontSize="large" sx={{color: green[400]}}></Flight>
+                        <Grid container>
+                            <Grid item xs={12}>
+                                <Typography className={infoText} style={{color: '#66BB6A'}}>2.2 - 2.6</Typography>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Typography className={infoText} style={{color: '#66BB6A'}}>
+                                    I visited Ho Chi Minh & Nah Trang, Vietnam🇻🇳
+                                </Typography>
+                            </Grid>
+                        </Grid>
+                    </Stack>
+                </Stack>
+                <Stack direction="row" spacing={2} paddingBottom={1.5} paddingTop={1.5}>
+                    <CalendarMonth sx={{color: orange[800]}}></CalendarMonth>
+                    <Typography className={dateText} style={{color: '#EF6C00'}}>
+                        January
+                    </Typography>
+                </Stack>
+                <Stack direction="row" spacing={2} paddingLeft={1.5}>
+                    <Divider orientation="vertical" flexItem/>
+                    <Stack direction="row" spacing={2}>
+                        <Flight fontSize="large" sx={{color: orange[800]}}></Flight>
+                        <Grid container>
+                            <Grid item xs={12}>
+                                <Typography className={infoText} style={{color: '#EF6C00'}}>1.3 - 1.6</Typography>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <Typography className={infoText} style={{color: '#EF6C00'}}>
+                                    I visited Kota Kinabalu, Malaysia🇲🇾
+                                </Typography>
+                            </Grid>
+                        </Grid>
+                    </Stack>
+                </Stack>
+            </Grid>
+            <Grid item xs={12} paddingTop={3}>
                 <Divider textAlign="left">
                     <Typography className={yearText} style={{color: '#0133B3'}}>
                         2023
@@ -37,10 +85,11 @@ export default function DividerText() {
                 <Stack direction="row" spacing={2} paddingLeft={1.5}>
                     <Divider orientation="vertical" flexItem/>
                     <Stack direction="row" spacing={2}>
-                        <Science fontSize={"large"} sx={{color: blue[800]}}></Science>
+                        <Science fontSize="large" sx={{color: blue[800]}}></Science>
                         <Grid container>
                             <Grid item xs={12}>
-                                <Typography className={infoText} style={{color: '#1664C0'}}>2023.12.15 - 2024.2.8</Typography>
+                                <Typography className={infoText} style={{color: '#1664C0'}}>2023.12.15 -
+                                    2024.2.8</Typography>
                             </Grid>
                             <Grid item xs={12}>
                                 <Typography className={infoText} style={{color: '#1664C0'}}>I visited NTU in
@@ -61,7 +110,7 @@ export default function DividerText() {
                     <Link href={"posts/2023/japan"} underline={"none"}
                           sx={{'&:hover': {opacity: 0.7}}}>
                         <Stack direction="row" spacing={2}>
-                            <Flight fontSize={"large"} sx={{color: brown[600]}}></Flight>
+                            <Flight fontSize="large" sx={{color: brown[600]}}></Flight>
                             <Grid container>
                                 <Grid item xs={12}>
                                     <Typography className={infoText} style={{color: '#6D4C41'}}>11.3 -
@@ -86,7 +135,7 @@ export default function DividerText() {
                     <Link href={"posts/2023/yantai"} underline={"none"}
                           sx={{'&:hover': {opacity: 0.7}}}>
                         <Stack direction="row" spacing={2}>
-                            <Flight fontSize={"large"} sx={{color: green[800]}}></Flight>
+                            <Flight fontSize="large" sx={{color: green[800]}}></Flight>
                             <Grid container>
                                 <Grid item xs={12}>
                                     <Typography className={infoText} style={{color: '#2F7D32'}}>10.20 -
@@ -103,7 +152,7 @@ export default function DividerText() {
                 <Stack direction="row" spacing={2} paddingLeft={1.5}>
                     <Divider orientation="vertical" flexItem/>
                     <Stack direction="row" spacing={2} paddingTop={3}>
-                        <Home fontSize={"large"} sx={{color: green[800]}}></Home>
+                        <Home fontSize="large" sx={{color: green[800]}}></Home>
                         <Grid container>
                             <Grid item xs={12}>
                                 <Typography className={infoText} style={{color: '#2F7D32'}}>10.1 - 10.9</Typography>
@@ -124,7 +173,7 @@ export default function DividerText() {
                 <Stack direction="row" spacing={2} paddingLeft={1.5}>
                     <Divider orientation="vertical" flexItem/>
                     <Stack direction="row" spacing={2}>
-                        <Flight fontSize={"large"} sx={{color: orange[800]}}></Flight>
+                        <Flight fontSize="large" sx={{color: orange[800]}}></Flight>
                         <Grid container>
                             <Grid item xs={12}>
                                 <Typography className={infoText} style={{color: '#EF6C00'}}>9.23 - 9.25</Typography>
@@ -139,7 +188,7 @@ export default function DividerText() {
                 <Stack direction="row" spacing={2} paddingLeft={1.5}>
                     <Divider orientation="vertical" flexItem/>
                     <Stack direction="row" spacing={2} paddingTop={3}>
-                        <Quiz fontSize={"large"} sx={{color: orange[800]}}></Quiz>
+                        <Quiz fontSize="large" sx={{color: orange[800]}}></Quiz>
                         <Grid container>
                             <Grid item xs={12}>
                                 <Typography className={infoText} style={{color: '#EF6C00'}}>9.14 - 9.19</Typography>
@@ -160,7 +209,7 @@ export default function DividerText() {
                 <Stack direction="row" spacing={2} paddingLeft={1.5}>
                     <Divider orientation="vertical" flexItem/>
                     <Stack direction="row" spacing={2}>
-                        <Science fontSize={"large"} sx={{color: yellow[700]}}></Science>
+                        <Science fontSize="large" sx={{color: yellow[700]}}></Science>
                         <Grid container>
                             <Grid item xs={12}>
                                 <Typography className={infoText} style={{color: '#FBC02D'}}>Whole month</Typography>
@@ -181,7 +230,7 @@ export default function DividerText() {
                 <Stack direction="row" spacing={2} paddingLeft={1.5}>
                     <Divider orientation="vertical" flexItem/>
                     <Stack direction="row" spacing={2}>
-                        <Science fontSize={"large"} sx={{color: purple[700]}}></Science>
+                        <Science fontSize="large" sx={{color: purple[700]}}></Science>
                         <Grid container>
                             <Grid item xs={12}>
                                 <Typography className={infoText} style={{color: '#7B1EA2'}}>7.16</Typography>
@@ -202,7 +251,7 @@ export default function DividerText() {
                 <Stack direction="row" spacing={2} paddingLeft={1.5}>
                     <Divider orientation="vertical" flexItem/>
                     <Stack direction="row" spacing={2}>
-                        <Flight fontSize={"large"} sx={{color: cyan[500]}}></Flight>
+                        <Flight fontSize="large" sx={{color: cyan[500]}}></Flight>
                         <Grid container>
                             <Grid item xs={12}>
                                 <Typography className={infoText} style={{color: '#00BCD4'}}>6.26-6.29</Typography>
@@ -223,7 +272,7 @@ export default function DividerText() {
                 <Stack direction="row" spacing={2} paddingLeft={1.5}>
                     <Divider orientation="vertical" flexItem/>
                     <Stack direction="row" spacing={2}>
-                        <School fontSize={"large"} sx={{color: green[300]}}></School>
+                        <School fontSize="large" sx={{color: green[300]}}></School>
                         <Grid container>
                             <Grid item xs={12}>
                                 <Typography className={infoText} style={{color: '#81C784'}}>2.10</Typography>
@@ -253,7 +302,7 @@ export default function DividerText() {
                 <Stack direction="row" spacing={2} paddingLeft={1.5}>
                     <Divider orientation="vertical" flexItem/>
                     <Stack direction="row" spacing={2}>
-                        <Medication fontSize={"large"} sx={{color: blue[400]}}></Medication>
+                        <Medication fontSize="large" sx={{color: blue[400]}}></Medication>
                         <Grid container>
                             <Grid item xs={12}>
                                 <Typography className={infoText} style={{color: '#42A5F5'}}>12.20</Typography>
@@ -268,7 +317,7 @@ export default function DividerText() {
                 <Stack direction="row" spacing={2} paddingLeft={1.5}>
                     <Divider orientation="vertical" flexItem/>
                     <Stack direction="row" spacing={2} paddingTop={3}>
-                        <Pets fontSize={"large"} sx={{color: blue[400]}}></Pets>
+                        <Pets fontSize="large" sx={{color: blue[400]}}></Pets>
                         <Grid container>
                             <Grid item xs={12}>
                                 <Typography className={infoText} style={{color: '#42A5F5'}}>12.5</Typography>
@@ -280,54 +329,54 @@ export default function DividerText() {
                         </Grid>
                     </Stack>
                 </Stack>
-                <Stack direction="row" spacing={2} paddingBottom={1.5} paddingTop={1.5}>
-                    <CalendarMonth sx={{color: green[800]}}></CalendarMonth>
-                    <Typography className={dateText} style={{color: '#2F7D32'}}>
-                        November
-                    </Typography>
-                </Stack>
-                <Stack direction="row" spacing={2} paddingLeft={1.5}>
-                    <Divider orientation="vertical" flexItem/>
-                    <Stack direction="row" spacing={2}>
-                        <Flight fontSize={"large"} sx={{color: green[800]}}></Flight>
-                        <Grid container>
-                            <Grid item xs={12}>
-                                <Typography className={infoText} style={{color: '#2F7D32'}}>11.29</Typography>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Typography className={infoText} style={{color: '#2F7D32'}}>I went home🏠 from Beihang
-                                    because of the epidemic🦠</Typography>
-                            </Grid>
-                        </Grid>
-                    </Stack>
-                </Stack>
-                <Stack direction="row" spacing={2} paddingBottom={1.5} paddingTop={1.5}>
-                    <CalendarMonth sx={{color: red[400]}}></CalendarMonth>
-                    <Typography className={dateText} style={{color: '#EB524F'}}>
-                        November
-                    </Typography>
-                </Stack>
-                <Stack direction="row" spacing={2} paddingLeft={1.5}>
-                    <Divider orientation="vertical" flexItem/>
-                    <Stack direction="row" spacing={2}>
-                        <Festival fontSize={"large"} sx={{color: red[400]}}></Festival>
-                        <Grid container>
-                            <Grid item xs={12}>
-                                <Typography className={infoText} style={{color: '#EB524F'}}>8.26</Typography>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <Typography className={infoText} style={{color: '#EB524F'}}>I visited Universal
-                                    Studios🎠 Beijing</Typography>
-                            </Grid>
-                        </Grid>
-                    </Stack>
-                </Stack>
-                <Grid item xs={12} spacing={2} paddingTop={3}>
-                    <Typography className={moreText} style={{color: '#0133B3'}}>
-                        Show more...
-                    </Typography>
-                </Grid>
+                {/*<Stack direction="row" spacing={2} paddingBottom={1.5} paddingTop={1.5}>*/}
+                {/*    <CalendarMonth sx={{color: green[800]}}></CalendarMonth>*/}
+                {/*    <Typography className={dateText} style={{color: '#2F7D32'}}>*/}
+                {/*        November*/}
+                {/*    </Typography>*/}
+                {/*</Stack>*/}
+                {/*<Stack direction="row" spacing={2} paddingLeft={1.5}>*/}
+                {/*    <Divider orientation="vertical" flexItem/>*/}
+                {/*    <Stack direction="row" spacing={2}>*/}
+                {/*        <Flight fontSize="large" sx={{color: green[800]}}></Flight>*/}
+                {/*        <Grid container>*/}
+                {/*            <Grid item xs={12}>*/}
+                {/*                <Typography className={infoText} style={{color: '#2F7D32'}}>11.29</Typography>*/}
+                {/*            </Grid>*/}
+                {/*            <Grid item xs={12}>*/}
+                {/*                <Typography className={infoText} style={{color: '#2F7D32'}}>I went home🏠 from Beihang*/}
+                {/*                    because of the epidemic🦠</Typography>*/}
+                {/*            </Grid>*/}
+                {/*        </Grid>*/}
+                {/*    </Stack>*/}
+                {/*</Stack>*/}
+                {/*<Stack direction="row" spacing={2} paddingBottom={1.5} paddingTop={1.5}>*/}
+                {/*    <CalendarMonth sx={{color: red[400]}}></CalendarMonth>*/}
+                {/*    <Typography className={dateText} style={{color: '#EB524F'}}>*/}
+                {/*        November*/}
+                {/*    </Typography>*/}
+                {/*</Stack>*/}
+                {/*<Stack direction="row" spacing={2} paddingLeft={1.5}>*/}
+                {/*    <Divider orientation="vertical" flexItem/>*/}
+                {/*    <Stack direction="row" spacing={2}>*/}
+                {/*        <Festival fontSize="large" sx={{color: red[400]}}></Festival>*/}
+                {/*        <Grid container>*/}
+                {/*            <Grid item xs={12}>*/}
+                {/*                <Typography className={infoText} style={{color: '#EB524F'}}>8.26</Typography>*/}
+                {/*            </Grid>*/}
+                {/*            <Grid item xs={12}>*/}
+                {/*                <Typography className={infoText} style={{color: '#EB524F'}}>I visited Universal*/}
+                {/*                    Studios🎠 Beijing</Typography>*/}
+                {/*            </Grid>*/}
+                {/*        </Grid>*/}
+                {/*    </Stack>*/}
+                {/*</Stack>*/}
+                {/*<Grid item xs={12} spacing={2} paddingTop={3}>*/}
+                {/*    <Typography className={moreText} style={{color: '#0133B3'}}>*/}
+                {/*        Show more...*/}
+                {/*    </Typography>*/}
+                {/*</Grid>*/}
             </Grid>
         </Grid>
-    </Root>);
+    </Box>);
 }

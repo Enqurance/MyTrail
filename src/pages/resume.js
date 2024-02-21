@@ -62,7 +62,7 @@ const ResumePage = () => {
                 </Item>
                 <Item style={{paddingLeft: '25px', paddingTop: '20px'}}>
                     <Stack className={schoolTitle}>Nanyang Technological University</Stack>
-                    <Stack className={textContent}>Intern, School of Computer Science and Engineering</Stack>
+                    <Stack className={textContent}>Intern - School of Computer Science and Engineering</Stack>
                     <Stack className={textContent}>2023.11 - 2024.2, Singapore</Stack>
                 </Item>
             </Stack>
@@ -83,7 +83,7 @@ const ResumePage = () => {
                 </Item>
                 <Item style={{paddingLeft: '25px', paddingTop: '20px'}}>
                     <Stack className={schoolTitle}>University of Hong Kong</Stack>
-                    <Stack className={textContent}>Intern, Department of Computer Science</Stack>
+                    <Stack className={textContent}>Intern - Department of Computer Science</Stack>
                     <Stack className={textContent}>2023.7 - 2023.9, Hong Kong, China</Stack>
                 </Item>
             </Stack>
@@ -104,7 +104,7 @@ const ResumePage = () => {
                 </Item>
                 <Item style={{paddingLeft: '20px', paddingTop: '20px'}}>
                     <Stack className={schoolTitle}>Beihang University(Former BUAA)</Stack>
-                    <Stack className={textContent}>Academic Assistant, Computer Organisation, Compile Technology</Stack>
+                    <Stack className={textContent}>Academic Assistant - Computer Organisation, Compile Technology</Stack>
                     <Stack className={textContent}>2022.9 -2023.1, 2023.9 - 2024.1, Beijing, China </Stack>
                 </Item>
             </Stack>
@@ -128,6 +128,9 @@ const ResumePage = () => {
                 <Grid item xs={12}>
                     Chinese (Native), English (IELTS Band 7)
                 </Grid>
+            </Grid>
+            <Grid container style={{paddingTop: '20px'}}>
+                <Grid item xs={24} className={subTitle}>Projects</Grid>
             </Grid>
         </Layout>
     )

@@ -16,10 +16,10 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 
 const Japan = () => {
-    return (<Layout pageTitle="TestPost">
+    return (<Layout pageTitle="Japan-2023">
         <Grid container>
             <Grid item xs={12}>
-                <Stack direction={"row"}>
+                <Stack direction="row">
                     <Flight sx={{fontSize: 40}} style={{color: red[700], opacity: 0.8}}></Flight>
                     <Typography className={postTitle} style={{color: red[700], opacity: 0.8}}>
                         Nov. 2023 · Japan 🇯🇵🌸

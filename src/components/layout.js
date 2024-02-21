@@ -13,9 +13,12 @@ import Link from '@mui/material/Link';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Typography from "@mui/material/Typography";
 
-const Layout = ({children}) => {
+const Layout = ({children, pageTitle}) => {
     return (<React.Fragment>
         <CssBaseline/>
+        <head>
+            <title>{pageTitle}</title>
+        </head>
         <Container maxWidth="100vh" className={containerGlobal}>
             <Container maxWidth="md">
                 <div className={container}>
@@ -27,25 +30,26 @@ const Layout = ({children}) => {
             </Container>
             <Container>
                 <Grid container justifyContent={"center"}>
-                    <Grid item={12} paddingTop={5}>
+                    <Grid item paddingTop={5}>
                         <span className={iconStyle}>
                             <Link href={"https://github.com/Enqurance"}>
-                                <GitHubIcon fontSize={"large"}></GitHubIcon>
+                                <GitHubIcon fontSize="large"></GitHubIcon>
                             </Link>
                         </span>
                         <span className={iconStyle}>
                                 <Link href={"mailto:Enqurance@Outlook.com"}>
-                                    <EmailIcon fontSize={"large"}></EmailIcon>
+                                    <EmailIcon fontSize="large"></EmailIcon>
                                 </Link>
                         </span>
                         <span className={iconStyle}>
-                            <Link href={"https://www.linkedin.com/in/%E5%AD%90%E6%9D%B0-%E6%9E%97-604690296/?locale=en_US"}>
-                                <LinkedInIcon fontSize={"large"}></LinkedInIcon>
+                            <Link
+                                href={"https://www.linkedin.com/in/%E5%AD%90%E6%9D%B0-%E6%9E%97-604690296/?locale=en_US"}>
+                                <LinkedInIcon fontSize="large"></LinkedInIcon>
                             </Link>
                         </span>
                         <span className={iconStyle}>
                             <Link href={"https://enqurance.github.io/"}>
-                                <FaceIcon fontSize={"large"}></FaceIcon>
+                                <FaceIcon fontSize="large"></FaceIcon>
                             </Link>
                         </span>
                     </Grid>

@@ -1,11 +1,8 @@
 import * as React from 'react'
 import {Link} from 'gatsby'
 import {
-    enquranceWord, navToTop, navToTopRight, navHomepageText, resumeWord, navSiderWord
+    enquranceWord, navHomepageText, navSiderWord
 } from './navbar.module.css'
-import {
-    avatarPic
-} from './index.module.css'
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Avatar from "@mui/material/Avatar";
@@ -71,12 +68,12 @@ const Navigator = () => {
     return (<Box sx={{flexGrow: 1}}>
         <Grid container style={{paddingTop: "30px", paddingBottom: "30px"}}>
             <Grid item xs={12}>
-                <Stack direction={"row"}>
+                <Stack direction="row">
                     <Item>
                         <Avatar alt="Enqurance"
                                 src="https://raw.githubusercontent.com/Enqurance/Figures/main/202311011725041.png"
                                 sx={{width: 50, height: 50}}
-                                variant={"rounded"}
+                                variant="rounded"
                         />
                     </Item>
                     <Item style={{display: 'flex', alignItems: 'center'}}>
@@ -104,8 +101,11 @@ const Navigator = () => {
                             <Link to="/" className={navHomepageText} style={{paddingRight: "30px"}}>
                                 <span className={enquranceWord}>Homepage</span>
                             </Link>
-                            <Link to="/resume" className={navHomepageText}>
+                            <Link to="/resume" className={navHomepageText} style={{paddingRight: "30px"}}>
                                 <span className={enquranceWord}>Resume</span>
+                            </Link>
+                            <Link to="/blogs" className={navHomepageText}>
+                                <span className={enquranceWord}>Blogs</span>
                             </Link>
                         </Item>
                     )}

@@ -1,7 +1,6 @@
 import React from 'react'
 import Markdown from 'react-markdown'
 import Layout from '../../../components/layout'
-import remarkGfm from 'remark-gfm'
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import {Flight} from "@mui/icons-material";
@@ -16,7 +15,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 
 const Japan = () => {
-    return (<Layout pageTitle="TestPost">
+    return (<Layout pageTitle="Yantai-2023">
         <Grid container>
             <Grid item xs={12}>
                 <Stack direction={"row"}>

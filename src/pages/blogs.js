@@ -1,10 +1,16 @@
 import * as React from 'react'
+import { blogsHead } from '../components/blogs.module.css'
 import Layout from '../components/layout'
+import Grid from '@mui/material/Grid';
 
 const AboutPage = () => {
   return (
     <Layout pageTitle="About Me">
-      <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+      <Grid container>
+          <Grid item xs={12} className={blogsHead}>
+              History Blogs
+          </Grid>
+      </Grid>
     </Layout>
   )
 }
