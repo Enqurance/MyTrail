@@ -56,7 +56,7 @@ const Navigator = () => {
                         <span className={navSiderWord}>Resume</span>
                     </Item>
                 </Link>
-                <Link to="/" className={navHomepageText}>
+                <Link to="/blogs" className={navHomepageText}>
                     <Item>
                         <span className={navSiderWord}>Blogs</span>
                     </Item>
@@ -98,21 +98,29 @@ const Navigator = () => {
                         </Item>
                     ) : (
                         <Item style={{display: 'flex', alignItems: 'center'}}>
-                            <Link to="/" className={navHomepageText} style={{paddingRight: "30px"}}>
-                                <span className={enquranceWord}>Homepage</span>
-                            </Link>
-                            <Link to="/resume" className={navHomepageText} style={{paddingRight: "30px"}}>
-                                <span className={enquranceWord}>Resume</span>
-                            </Link>
-                            <Link to="/blogs" className={navHomepageText}>
-                                <span className={enquranceWord}>Blogs</span>
-                            </Link>
+                            <Lists></Lists>
                         </Item>
                     )}
                 </Stack>
             </Grid>
         </Grid>
     </Box>)
+}
+
+function Lists() {
+    return (
+        <Box>
+            <Link to="/" className={navHomepageText} style={{paddingRight: "30px"}}>
+                <span className={enquranceWord}>Homepage</span>
+            </Link>
+            <Link to="/resume" className={navHomepageText} style={{paddingRight: "30px"}}>
+                <span className={enquranceWord}>Resume</span>
+            </Link>
+            <Link to="/blogs" className={navHomepageText}>
+                <span className={enquranceWord}>Blogs</span>
+            </Link>
+        </Box>
+    )
 }
 
 const Item = styled(Paper)(({theme}) => ({

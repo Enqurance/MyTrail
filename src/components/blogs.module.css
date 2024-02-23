@@ -1,3 +1,12 @@
 .blogs-head{
+    font-weight: bolder;
     font-size: xx-large;
+    color: royalblue;
+    padding-left: 2%;
+}
+
+.card-grid-style{
+    padding-top: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
 }

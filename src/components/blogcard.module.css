@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.card-style {
+    margin-top: 5%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-style:hover {
+    transform: scale(1.05);
+}
+
+.card-title-style {
+    font-family: Josefin Sans, serif;
+    font-size: larger;
+    font-weight: bold;
+    color: #0133B3;
+}
+
+.card-time-style {
+    font-family: Josefin Sans, serif;
+    color: gray;
+}
+
+.card-text-style {
+    font-family: Josefin Sans, serif;
+    color: black;
+}
