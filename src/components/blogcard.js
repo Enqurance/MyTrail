@@ -10,10 +10,11 @@ import {
     cardTitleStyle,
     cardTextStyle
 } from './blogcard.module.css'
+import Grid from "@mui/material/Grid";
 
 export default function BlogCard({info}) {
     return (
-        <Card className={cardStyle} style={{height: 330}}>
+        <Card className={cardStyle}>
             <Link href={info.link} underline="none">
                 <CardMedia
                     component="img"
@@ -22,15 +23,15 @@ export default function BlogCard({info}) {
                     alt={info.alt}
                 />
                 <CardContent>
-                    <Typography className={cardTitleStyle}>
+                    <Grid container className={cardTitleStyle}>
                         {info.title}
-                    </Typography>
-                    <Typography className={cardTimeStyle}>
+                    </Grid>
+                    <Grid container className={cardTimeStyle}>
                         {info.time}
-                    </Typography>
-                    <Typography className={cardTextStyle}>
+                    </Grid>
+                    <Grid container className={cardTextStyle}>
                         {info.text}
-                    </Typography>
+                    </Grid>
                 </CardContent>
             </Link>
         </Card>
