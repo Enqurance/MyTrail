@@ -15,7 +15,6 @@ import Grid from "@mui/material/Grid";
 import Link from '@mui/material/Link';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Typography from "@mui/material/Typography";
-
 const Layout = ({children, pageTitle}) => {
     return (<React.Fragment>
             <CssBaseline/>

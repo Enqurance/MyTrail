@@ -13,6 +13,7 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import MenuIcon from '@mui/icons-material/Menu';
+import Container from "@mui/material/Container";
 
 const Navigator = () => {
 
@@ -41,7 +42,7 @@ const Navigator = () => {
     }, []);
 
     const list = () => (
-        <div
+        <Container
             onClick={toggleDrawer(false)}
             onKeyDown={toggleDrawer(false)}
         >
@@ -62,7 +63,7 @@ const Navigator = () => {
                     </Item>
                 </Link>
             </List>
-        </div>
+        </Container>
     );
 
     return (<Box sx={{flexGrow: 1}}>

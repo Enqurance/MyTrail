@@ -18,7 +18,7 @@ const Japan = () => {
     return (<Layout pageTitle="Yantai-2023">
         <Grid container>
             <Grid item xs={12}>
-                <Stack direction={"row"}>
+                <Stack direction="row">
                     <Flight sx={{fontSize: 40}} style={{color: blue[600], opacity: 0.8}}></Flight>
                     <Typography className={postTitle} style={{color: blue[600], opacity: 0.8}}>
                         Oct. 2023 · Yantai City🌊

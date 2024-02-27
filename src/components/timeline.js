@@ -1,15 +1,14 @@
 import * as React from 'react';
-import {styled} from '@mui/material/styles';
 import Divider from '@mui/material/Divider';
 import Typography from "@mui/material/Typography";
 import Link from '@mui/material/Link';
-import {CalendarMonth, Flight, Home, Quiz, Science, School, Medication, Pets, Festival} from "@mui/icons-material";
+import {CalendarMonth, Flight, Home, Quiz, Science, School, Medication, Pets} from "@mui/icons-material";
 import {
-    yearText, dateText, infoText, moreText
+    yearText, dateText, infoText
 } from '../components/timeline.module.css'
 import Grid from "@mui/material/Grid";
 import Stack from '@mui/material/Stack';
-import {blue, green, orange, yellow, purple, cyan, brown, red} from '@mui/material/colors';
+import {blue, green, orange, yellow, purple, cyan, brown} from '@mui/material/colors';
 import Box from "@mui/material/Box";
 
 export default function DividerText() {
