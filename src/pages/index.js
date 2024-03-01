@@ -15,7 +15,6 @@ import {
     siteIntro,
 } from '../components/index.module.css'
 
-
 const IndexPage = () => {
     return (<Layout pageTitle="HomePage">
         <Stack direction="row">

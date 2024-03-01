@@ -30,19 +30,22 @@ export default function DividerText() {
                 </Stack>
                 <Stack direction="row" spacing={2} paddingLeft={1.5}>
                     <Divider orientation="vertical" flexItem/>
-                    <Stack direction="row" spacing={2}>
-                        <Flight fontSize="large" sx={{color: green[400]}}></Flight>
-                        <Grid container>
-                            <Grid item xs={12}>
-                                <Typography className={infoText} style={{color: '#66BB6A'}}>2.2 - 2.6</Typography>
+                    <Link href={"posts/2024/vietnam"} underline={"none"}
+                          sx={{'&:hover': {opacity: 0.7}}}>
+                        <Stack direction="row" spacing={2}>
+                            <Flight fontSize="large" sx={{color: green[400]}}></Flight>
+                            <Grid container>
+                                <Grid item xs={12}>
+                                    <Typography className={infoText} style={{color: '#66BB6A'}}>2.2 - 2.6</Typography>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <Typography className={infoText} style={{color: '#66BB6A'}}>
+                                        I visited Ho Chi Minh & Nah Trang, Vietnam🇻🇳【Blog】
+                                    </Typography>
+                                </Grid>
                             </Grid>
-                            <Grid item xs={12}>
-                                <Typography className={infoText} style={{color: '#66BB6A'}}>
-                                    I visited Ho Chi Minh & Nah Trang, Vietnam🇻🇳
-                                </Typography>
-                            </Grid>
-                        </Grid>
-                    </Stack>
+                        </Stack>
+                    </Link>
                 </Stack>
                 <Stack direction="row" spacing={2} paddingBottom={1.5} paddingTop={1.5}>
                     <CalendarMonth sx={{color: orange[800]}}></CalendarMonth>
